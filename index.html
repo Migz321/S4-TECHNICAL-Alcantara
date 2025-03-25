@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Food of Japan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/Photo/HIRO_LOGO-removebg-preview.png" alt="Logo" class="logo" height="60">
+                Japanese Food
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Cards Section -->
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#ramenModal">
+                    <img src="/Photo/ramen (1).webp" class="card-img" alt="Ramen" width=""> 
+                    <div class="card-overlay">
+                        <h5>Ramen</h5>
+                        <p>A noodle soup with a rich broth and various toppings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#sushiModal">
+                    <img src="/Photo/Sushi1.jpg" class="card-img" alt="Sushi" height="800px">
+                    <div class="card-overlay">
+                        <h5>Sushi</h5>
+                        <p>A bite-sized ball of rice topped with a fresh slice of fish or other seafood.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#tonkatsuModal">
+                    <img src="/Photo/Donburi.png" class="card-img" alt="Tonkatsu">
+                    <div class="card-overlay">
+                        <h5>Donburi</h5>
+                        <p>This rice bowl dish is almost as popular as ramen in Japan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#unagiModal">
+                    <img src="/Photo/Sashimi.png" class="card-img" alt="Unagi">
+                    <div class="card-overlay">
+                        <h5>Sashimi</h5>
+                        <p> Sashimi differs from sushi in that all sushi is made with vinegared rice and does not always contain raw fish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="ramenModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ramen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/Photo/ramen (1).webp" class="img-fluid" alt="Ramen">
+                    <p><strong>Ingredients:</strong> Noodles, broth, sliced pork, green onions, soft-boiled egg, miso paste.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Heat the broth in a pot, then add soy sauce and miso paste.</p>
+                    <p>Cook the ramen noodles according to package instructions.</p>
+                    <p>Divide the noodles into bowls and pour the hot broth over them.</p>
+                    <p>Top with sliced pork, boiled eggs, and green onions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="sushiModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sushi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/Photo/Sushi1.jpg" class="img-fluid" alt="Sushi">
+                    <p><strong>Ingredients:</strong> Vinegar, rice, fresh fish, nori, soy sauce, , sugar, wasabi.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Rinse the rice, then cook it with water.</p>
+                    <p>Mix rice vinegar and sugar, then combine with the cooked rice.</p>
+                    <p>Shape the rice into small balls and top with fresh fish.</p>
+                    <p>Wrap with nori if desired.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="tonkatsuModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tonkatsu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/Photo/Donburi.png"class="img-fluid" alt="Donburi">
+                    <p><strong>Ingredients:</strong> 200g thinly sliced beef 80ml tsuyu concentrated soup stock 1 onion 380g cooked rice shichimi chilli powder benishoga pickled red ginger.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Start by cutting up a whole onion into thin slices and slicing the beef very finely.</p>
+                    <p>Add 80ml of tsuyu and 80ml of water to a frying pan and turn on the heat.</p>
+                    <p>After 5 minutes, add 1 onion (sliced) to the pan and allow it to cook for a minute or two, or until the onions are soft.</p>
+                    <p>Garnish the dish with beni shoga pickled red ginger and shichimi chilli powder before serving.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="unagiModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Unagi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/Photo/Sashimi.png" class="img-fluid" alt="Sashimi">
+                    <p><strong>Ingredients:</strong> 500g sashimi grade raw tuna,1 tbsp mirin,1 tbsp cooking sake,3 tbsp soy sauce.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Mix 1 tbsp mirin, 1 tbsp cooking sake, and 3 tbsp soy sauce in a small sauce pan and put on medium heat. Once it starts to simmer, reduce the heat to medium-low and allow to simmer for about 5 minutes. .</p>
+                    <p>Slice 500g tuna into small bite sized pieces, and then in a bowl combine the tuna and the marinade. Allow to marinate in the fridge for 15-30 minutes..</p>
+                    <p>Slice 3 shiso perilla leaves into thin strips, and top the bowls with the leaves, 1 tbsp sesame seeds, and place the sushi ginger on the side. .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
